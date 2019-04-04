@@ -1,0 +1,14 @@
+---
+title: Resumos
+layout: default
+---
+<h1>Resumos:</h1>
+<div class="post-list">
+  <ul>
+    {% for post in site.posts %}
+      <li class="post-list-li">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
